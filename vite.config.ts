@@ -7,16 +7,28 @@ import dts from 'vite-plugin-dts';
 export default defineConfig({
   plugins: [
     react(),
-    dts({include: ['lib']}),
+    dts({
+      include: ['lib'],
+      tsconfigPath: 'tsconfig.lib.json',
+      rollupTypes: true,
+    }),
   ],
   build: {
     copyPublicDir: false,
     lib: {
       entry: resolve(__dirname, 'lib/main.ts'),
       formats: ['es'],
+      name: 'ViteReactComponents',
+      fileName: (format) => `vrc.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react/jsx-runtime'],
+      external: ['react', 'react/jsx-runtime', 'react-dom'],
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+        },
+      }
     }
   }
 });
