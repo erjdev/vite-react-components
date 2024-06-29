@@ -38,8 +38,5 @@ Working in this repository primarily requires Node to build the javascript and T
 
 1. Create a new component in the `lib/` directory following similar conventions to existing components
 1. Import the component in the `test-app/main.tsx` file to test it out
-1. Run the local dev environment to see your component in action - `npm run dev`
-
-## References
-
-- [Creating a library - dev.to](https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma)
+1. Run the local dev environment to test it for your own uses - `npm run dev`
+1. Open your browser at `http://localhost:3000` to see your component in action

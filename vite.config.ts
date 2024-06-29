@@ -8,11 +8,14 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      include: ['lib'],
+    include: ['lib'],
       tsconfigPath: 'tsconfig.lib.json',
       rollupTypes: true,
     }),
   ],
+  server: {
+    port: 3000,
+  },
   build: {
     copyPublicDir: false,
     lib: {
@@ -27,6 +30,7 @@ export default defineConfig({
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
+          "react/jsx-runtime": "JSXRuntime",
         },
       }
     }
