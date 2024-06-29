@@ -1,5 +1,5 @@
 {
-  "name": "vite-react-components",
+  "name": "@erjdev/vite-react-components",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -41,5 +41,8 @@
     "vite": "^5.3.1",
     "vite-plugin-dts": "^3.9.1",
     "vitest": "^1.6.0"
+  },
+  "publishConfig": {
+    "@erjdev:registry": "https://npm.pkg.github.com"
   }
 }
