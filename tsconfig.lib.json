@@ -1,6 +1,6 @@
 {
   "include": ["lib"],
-  "exclude": ["src"],
+  "exclude": ["test-app"],
   "compilerOptions": {
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
