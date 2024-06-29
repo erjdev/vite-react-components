@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, Input, Label } from '../lib/main';
 
 function App() {

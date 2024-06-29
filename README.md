@@ -17,7 +17,7 @@ The main entry point of your library will be a file named `main.ts` inside of `l
 
 ## Getting Started
 
-In order to get started with this repository, you will need to ensure you have all the required dependencies / software installed and need to run an initial setup.
+In order to get started with this repository, you will need to ensure you have prerequisite software; once that is complete, an initial setup will need to be performed.
 
 ### Prerequisites
 
