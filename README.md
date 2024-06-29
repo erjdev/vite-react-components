@@ -8,10 +8,10 @@ This repository is a simple React + TypeScript project that uses Vite as the bui
 
 The project is setup with the following structure:
 
-- `test-app/*` - This directory contains a test web application that uses the components in the `lib/*` directory
-- `lib/*` - This directory contains our React components; test them out using code in the `test-app/*` directory
+- `playground/*` - This directory contains a test web application that uses the components in the `lib/*` directory
+- `lib/*` - This directory contains our React components; test them out using code in the `playground/*` directory
 
-Think of all code inside the `test-app` folder as a demo page.  The actual library code resides in another folder named `lib`. This is where you create your components.
+Think of all code inside the `playground` folder as a demo page.  The actual library code resides in another folder named `lib`. This is where you create your components.
 
 The main entry point of your library will be a file named `main.ts` inside of `lib`. When installing the library you can import everything that is exported from this file.
 
@@ -37,6 +37,6 @@ Working in this repository primarily requires Node to build the javascript and T
 ## Implementing your own component
 
 1. Create a new component in the `lib/` directory following similar conventions to existing components
-1. Import the component in the `test-app/main.tsx` file to test it out
+1. Import the component in the `playground/main.tsx` file to test it out
 1. Run the local dev environment to test it for your own uses - `npm run dev`
 1. Open your browser at `http://localhost:3000` to see your component in action
