@@ -40,3 +40,10 @@ Working in this repository primarily requires Node to build the javascript and T
 1. Import the component in the `playground/main.tsx` file to test it out
 1. Run the local dev environment to test it for your own uses - `npm run dev`
 1. Open your browser at `http://localhost:3000` to see your component in action
+
+## Using the components in your own project
+
+1. Build the project - `npm run build`
+1. Install the library in your own project - `npm install @erjdev/vite-react-components`
+1. Import the components in your project and use them as needed
+1. Setup your github workflow to use the library as a package - see [WebFactory's SSH Agent](https://github.com/webfactory/ssh-agent)
