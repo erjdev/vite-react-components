@@ -1,9 +1,9 @@
 {
   "name": "@erjdev/vite-react-components",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "type": "module",
   "files": [
-    "dist"
+    "dist/"
   ],
   "types": "./dist/vrc.es.d.ts",
   "module": "./dist/vrc.es.js",
@@ -14,7 +14,10 @@
     },
     "./dist/style.css": "./dist/style.css"
   },
-  "repository": "https://github.com/erjdev/vite-react-components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erjdev/vite-react-components.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b ./tsconfig.lib.json && vite build",
