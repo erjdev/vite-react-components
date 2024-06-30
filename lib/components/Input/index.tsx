@@ -5,7 +5,7 @@ import './Input.scss';
 export type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
   label?: string;
   direction?: 'row' | 'col';
-};
+}
 
 export const Input: React.FC<InputProps> = (props) => {
   const { className = '', direction = 'col', label, ...restProps } = props;

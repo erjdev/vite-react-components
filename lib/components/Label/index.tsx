@@ -8,7 +8,7 @@ export type LabelProps = {
 export const Label: React.FC<LabelProps> = (props) => {
   const { className = '', children, direction = 'row', ...restProps } = props;
   return (
-    <label className={`vrc-label${direction == 'col' ? ' vrc-label--col ' : ' '}${className}`} {...restProps}>
+    <label className={`vrc-label ${className}`} {...restProps}>
       {children}
     </label>
   );

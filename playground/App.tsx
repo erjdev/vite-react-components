@@ -12,10 +12,10 @@ const App: React.FC = () => {
 const MyGridForm: React.FC = () => {
   return (
     <Form>
-      <Input id="name" placeholder='John Doe' label='My Name' />
-      <Input label='Your age' placeholder='30' />
+      <Input id="name" placeholder='John Doe' label='My Name' aria-autocomplete='none' maxLength={64} />
+      <Input label='Your age' type="number" min={1} max={125} placeholder='30' required aria-required="true" maxLength={3} />
       
-      <Button>My Button</Button>
+      <Button type="submit">My Button</Button>
     </Form>
   )
 }
