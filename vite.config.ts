@@ -52,7 +52,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, './lib/index'),
+      '@/*': path.resolve(__dirname, './lib/*'),
     },
   },
   test: {
