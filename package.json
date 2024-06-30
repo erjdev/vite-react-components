@@ -1,19 +1,15 @@
 {
   "name": "@erjdev/vite-react-components",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "type": "module",
   "files": [
-    "dist/"
+    "dist"
   ],
-  "types": "./dist/vrc.es.d.ts",
-  "module": "./dist/vrc.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/vrc.es.js",
-      "types": "./dist/vrc.es.d.ts"
-    },
-    "./dist/style.css": "./dist/style.css"
-  },
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
+  "sideEffects": [
+    "**/*.css"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/erjdev/vite-react-components.git"
@@ -43,6 +39,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.1",
     "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-lib-inject-css": "^2.1.1",
     "vitest": "^1.6.0"
   },
   "publishConfig": {
