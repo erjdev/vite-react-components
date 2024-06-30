@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Input, Label } from '../lib/main';
+import { Button, Input, Label } from '../lib';
 
 function App() {
   return (
