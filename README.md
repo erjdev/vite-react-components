@@ -47,3 +47,8 @@ Working in this repository primarily requires Node to build the javascript and T
 1. Install the library in your own project - `npm install @erjdev/vite-react-components`
 1. Import the components in your project and use them as needed
 1. Setup your github workflow to use the library as a package - see [WebFactory's SSH Agent](https://github.com/webfactory/ssh-agent)
+
+
+## References
+
+- <https://stackoverflow.com/a/73521732>
