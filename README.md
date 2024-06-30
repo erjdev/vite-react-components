@@ -43,11 +43,22 @@ Working in this repository primarily requires Node to build the javascript and T
 
 ## Using the components in your own project
 
+Since this is a private repository, you will need to setup your personal `~/.npmrc` file (in your user directory) to include the following lines:
+
+> ```
+> @erjdev:registry=https://npm.pkg.github.com
+> //npm.pkg.github.com/:_authToken=ghp_...
+> ```
+
+The auth token is a personal access token that you can generate from your github account.  This will give you personal access to any private repositories that you have access to.
+
 1. Build the project - `npm run build`
 1. Install the library in your own project - `npm install @erjdev/vite-react-components`
 1. Import the components in your project and use them as needed
-1. Setup your github workflow to use the library as a package - see [WebFactory's SSH Agent](https://github.com/webfactory/ssh-agent)
 
+If you intend to use the library in a CI/CD pipeline, you will need to setup your CI/CD pipeline to have the credentials to download this library as a package.
+
+1. Setup your github workflow to use the library as a package - see [WebFactory's SSH Agent](https://github.com/webfactory/ssh-agent)
 
 ## References
 

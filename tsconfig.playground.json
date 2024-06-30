@@ -24,7 +24,7 @@
     "noFallthroughCasesInSwitch": true
   },
   "paths": {
-    "@": ["./lib/main"],
+    "@": ["./lib/index"],
     "@/*": ["./lib/*"],
   },
   "include": ["playground", "lib"]
