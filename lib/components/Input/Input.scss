@@ -1,3 +1,13 @@
+.vrc-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  &--col {
+    flex-direction: column;
+  }
+}
+
 .vrc-input {
   padding: 1rem;
 }

@@ -27,6 +27,7 @@ export default defineConfig({
         button: resolve(__dirname, 'lib/components/Button/index.tsx'),
         input: resolve(__dirname, 'lib/components/Input/index.tsx'),
         label: resolve(__dirname, 'lib/components/Label/index.tsx'),
+        form: resolve(__dirname, 'lib/components/Form/index.tsx'),
       },
       formats: ['es'],
       name: 'ViteReactComponents',

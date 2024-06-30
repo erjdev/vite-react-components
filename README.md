@@ -10,6 +10,7 @@ The project is setup with the following structure:
 
 - `playground/*` - This directory contains a test web application that uses the components in the `lib/*` directory
 - `lib/*` - This directory contains our React components; test them out using code in the `playground/*` directory
+- `vitest/*` - This directory contains unit tests for the project written using Vitest
 
 Think of all code inside the `playground` folder as a demo page.  The actual library code resides in another folder named `lib`. This is where you create your components.
 
@@ -36,19 +37,18 @@ Working in this repository primarily requires Node to build the javascript and T
 
 ## Implementing your own component
 
-1. Create a new component in the `lib/` directory following similar conventions to existing components
-1. Import the component in the `playground/main.tsx` file to test it out
+1. Create a new component in the [`lib/`](./lib/) directory following similar conventions to existing components
+1. Export the component in the [`lib/index.ts`](./lib/index.ts) file
+1. Import the component in the [`playground/App.tsx`](./playground/App.tsx) file to test it out
 1. Run the local dev environment to test it for your own uses - `npm run dev`
-1. Open your browser at `http://localhost:3000` to see your component in action
+1. Open your browser at [`http://localhost:3000`](http://localhost:3000) to see your component in action
 
 ## Using the components in your own project
 
 Since this is a private repository, you will need to setup your personal `~/.npmrc` file (in your user directory) to include the following lines:
 
-> ```
-> @erjdev:registry=https://npm.pkg.github.com
-> //npm.pkg.github.com/:_authToken=ghp_...
-> ```
+    @erjdev:registry=https://npm.pkg.github.com
+    //npm.pkg.github.com/:_authToken=ghp_...
 
 The auth token is a personal access token that you can generate from your github account.  This will give you personal access to any private repositories that you have access to.
 
