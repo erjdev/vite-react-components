@@ -45,7 +45,7 @@ Working in this repository primarily requires Node to build the javascript and T
 
 ## Using the components in your own project
 
-Since this is a private repository, you will need to setup your personal `~/.npmrc` file (in your user directory) to include the following lines:
+You will need to setup your personal `~/.npmrc` file (in your user directory) to include the following lines to authenticate to the github package registry using a personal access token.
 
     @erjdev:registry=https://npm.pkg.github.com
     //npm.pkg.github.com/:_authToken=ghp_...
